@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Viktor</title>
+  <link rel="stylesheet" href="app/css/main.css">
+</head>
+<body>
+  <aside id="toolbar" ng-controller="ToolbarController" ng-include="'app/views/toolbar/layout.html'"></aside>
+  <aside id="explorer" ng-controller='ExplorerController' ng-include="'app/views/explorer/layout.html'"></aside>
+  <aside id="properties" ng-controller='PropertiesController' ng-include="'app/views/properties/layout.html'"></aside>
+  <main ng-controller='MainController'></main>
+
+  <script src="vendor/js/angular.js"></script>
+  <script src="app/main.js"></script>
+  <script src="app/controllers/toolbar-controller.js"></script>
+  <script src="app/controllers/explorer-controller.js"></script>
+  <script src="app/controllers/main-controller.js"></script>
+  <script src="app/controllers/properties-controller.js"></script>
+</body>
+</html>
